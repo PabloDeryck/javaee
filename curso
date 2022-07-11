@@ -1,0 +1,60 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double horas,valorHora,calcSalario;
+		int funcionario;
+		funcionario = sc.nextInt();
+		horas = sc.nextDouble();
+		valorHora = sc.nextDouble();
+		
+		calcSalario = horas * valorHora;
+		
+		System.out.println("Funcionario é o "+ funcionario);
+		System.out.printf("Salario %.2f%n", calcSalario);
+		
+		/* 
+		 * diferenca 
+		int a, b, c, d, diferenca;
+		a = sc.nextInt();
+		b = sc.nextInt();	
+		c = sc.nextInt();
+		d = sc.nextInt();
+		
+		diferenca = (a*b-c*d);
+		System.out.println("diferenca é "+ diferenca);
+		
+		
+		
+		  Valor PI
+		  Locale.setDefault(Locale.US);
+		double R, A, pi = 3.14159;
+		
+		R = sc.nextDouble();
+		
+		A = pi * R*R;
+		
+		System.out.printf("Valor da Area e %.4f%n", A);
+		
+		  
+		 SOMA
+		 int a, b , soma;
+		  
+		
+		a = sc.nextInt();
+		b = sc.nextInt();
+		soma = a + b;
+		
+		System.out.println("Valor da soma e:" + soma);
+		*/
+		
+		sc.close();
+		
+		
+	}
+}
